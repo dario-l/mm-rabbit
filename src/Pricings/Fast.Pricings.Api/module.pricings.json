@@ -1,0 +1,8 @@
+{
+  "pricings": {
+    "module": {
+      "name": "pricings",
+      "enabled": true
+    }
+  }
+}

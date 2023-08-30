@@ -1,0 +1,8 @@
+{
+  "rides": {
+    "module": {
+      "name": "rides",
+      "enabled": true
+    }
+  }
+}

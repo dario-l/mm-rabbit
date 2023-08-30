@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Drivers\Fast.Drivers.Api\Fast.Drivers.Api.csproj" />
+    <ProjectReference Include="..\..\Payments\Fast.Payments.Api\Fast.Payments.Api.csproj" />
+    <ProjectReference Include="..\..\Pricings\Fast.Pricings.Api\Fast.Pricings.Api.csproj" />
+    <ProjectReference Include="..\..\Rides\Fast.Rides.Api\Fast.Rides.Api.csproj" />
+    <ProjectReference Include="..\..\Saga\Fast.Saga\Fast.Saga.csproj" />
+    <ProjectReference Include="..\..\Shared\Fast.Shared.Infrastructure\Fast.Shared.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

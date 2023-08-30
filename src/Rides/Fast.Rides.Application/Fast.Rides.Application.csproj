@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Shared\Fast.Shared.Abstractions\Fast.Shared.Abstractions.csproj" />
+      <ProjectReference Include="..\Fast.Rides.Domain\Fast.Rides.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="Fast.Rides.Api" />
+        <InternalsVisibleTo Include="Fast.Rides.Infrastructure" />
+    </ItemGroup>
+
+</Project>

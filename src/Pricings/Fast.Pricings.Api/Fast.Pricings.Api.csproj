@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Fast.Bootstrapper" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="module.pricings.json" />
+    <Content Include="module.pricings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Fast.Shared.Abstractions\Fast.Shared.Abstractions.csproj" />
+    <ProjectReference Include="..\Fast.Pricings.Core\Fast.Pricings.Core.csproj" />
+  </ItemGroup>
+
+</Project>

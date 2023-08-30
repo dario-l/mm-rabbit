@@ -1,0 +1,60 @@
+@url = http://localhost:5000
+@driverId = 1
+@rideRequestId = 1
+@rideId = 1
+
+###
+GET {{url}}
+
+###
+GET {{url}}/drivers
+
+###
+GET {{url}}/drivers/{{driverId}}
+
+###
+POST {{url}}/drivers
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}
+
+###
+POST {{url}}/rides/requests
+Content-Type: application/json
+
+{
+    "customerId": 1,
+    "from": "Starowislna 1",
+    "to": "Karmelicka 1"
+}
+
+###
+GET {{url}}/rides/requests/{{rideRequestId}}
+
+###
+PUT {{url}}/rides/requests/{{rideRequestId}}/confirm
+Content-Type: application/json
+
+{
+}
+
+###
+POST {{url}}/rides
+Content-Type: application/json
+
+{
+    "rideRequestId": {{rideRequestId}},
+    "driverId": {{driverId}}
+}
+
+###
+GET {{url}}/rides/{{rideId}}
+
+###
+PUT {{url}}/rides/{{rideId}}/finish
+Content-Type: application/json
+
+{
+}

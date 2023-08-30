@@ -1,0 +1,8 @@
+{
+  "drivers": {
+    "module": {
+      "name": "drivers",
+      "enabled": false
+    }
+  }
+}
